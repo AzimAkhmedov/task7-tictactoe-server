@@ -9,7 +9,7 @@ const httpServer = createServer(app);
 app.use(cors());
 const socketServer = new Server(httpServer, {
   cors: {
-    origin: "https://6485a42eb6fff37c822efefc--statuesque-rabanadas-4e0d08.netlify.app",
+    origin: "*",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true,
